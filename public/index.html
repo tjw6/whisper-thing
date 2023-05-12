@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careless Whisper</title>
+    <style>
+        body {
+            background-color: #B0E0E6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input[type="file"] {
+            margin-top: 20px;
+        }
+        #spectrogram {
+            display: none;
+            margin-top: 20px;
+        }
+        #transcription {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Careless Whisper</h1>
+    <input type="file" id="audioFile" accept="audio/*">
+    <div id="spectrogram">
+        <iframe src="spectrogram.html" width="400" height="100" frameborder="0" scrolling="no"></iframe>
+    </div>    
+    <div id="transcription"></div>
+    <script src="script.js"></script>
+</body>
+</html>
